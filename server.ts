@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
 import bodyParser from 'body-parser';
-import nodemailer from 'nodemailer';
+// import nodemailer from 'nodemailer';
 import cors from 'cors';
 import dotenv from 'dotenv'
 
@@ -28,33 +28,33 @@ export function app(): express.Express {
     message: string;
   }
   // Endpoint for sending email
-  server.post('/send-email', async (req: Request, res: Response) => {
-    const { name, email, message }: EmailRequest = req.body;
+  // server.post('/send-email', async (req: Request, res: Response) => {
+  //   const { name, email, message }: EmailRequest = req.body;
 
     // Set up Nodemailer transporter
-    const transporter = nodemailer.createTransport({
-      service: 'Gmail',
-      auth: {
-        user: process.env['EMAIL'], // Replace with your email
-        pass: process.env['PASSWORD'], // Replace with your email password or app password
-      },
-    });
+    // const transporter = nodemailer.createTransport({
+    //   service: 'Gmail',
+    //   auth: {
+    //     user: process.env['EMAIL'], // Replace with your email
+    //     pass: process.env['PASSWORD'], // Replace with your email password or app password
+    //   },
+    // });
 
-    const mailOptions = {
-      from: email,
-      to: 'n01511618@humbermail.ca', // Your email
-      subject: 'New Contact Form Submission',
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-    };
+  //   const mailOptions = {
+  //     from: email,
+  //     to: 'n01511618@humbermail.ca', // Your email
+  //     subject: 'New Contact Form Submission',
+  //     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+  //   };
 
-    try {
-      await transporter.sendMail(mailOptions);
-      res.status(200).send('Email sent successfully');
-    } catch (error) {
-      console.error('Error sending email:', error);
-      res.status(500).send('Failed to send email');
-    }
-  });
+  //   try {
+  //     await transporter.sendMail(mailOptions);
+  //     res.status(200).send('Email sent successfully');
+  //   } catch (error) {
+  //     console.error('Error sending email:', error);
+  //     res.status(500).send('Failed to send email');
+  //   }
+  // });
 
   const commonEngine = new CommonEngine();
 
