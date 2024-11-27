@@ -1,27 +1,15 @@
-# AngularAssignment
+# This is my angular portfolio project
+In this project, I showcase my skills in angular routing, html, css and typescript.
+I used the service tool to consume "(https://api.github.com/users)" to show the username, image and link to their profile.
+I used some authentication for the form so that an alert is raised when 2 fields are not filled properly.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
 
-## Development server
+# Issues faced
+I tried to implement the node.js as server.ts so I can send an email when the contact form is submitted.
+I still have not figured that out yet, but I will def.
+I tried to implement a search component to directly search for github username and display the information directly from github database, I don't know where to get the api.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Lesson learnt
+Building an application is easy and at the same time difficult.
+I will keep practicing to have hands on experience.
+I think I prefer Angular to the other frontend frameworks like react and Next.js
