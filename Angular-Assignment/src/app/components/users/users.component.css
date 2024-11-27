@@ -1,0 +1,36 @@
+.list {
+    align-items: center;
+}
+
+p img {
+    width: 300px;
+    height: 300px;
+}
+button {
+    width: 20%;
+    padding: 10px;
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  @media (max-width: 768px) {
+    button {
+        width: 150px;
+        padding: 10px;
+        background-color: #04aa6d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      p img {
+        width: 150px;
+        height: 150px;
+    }
+  }

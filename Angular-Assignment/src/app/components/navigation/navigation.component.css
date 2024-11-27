@@ -1,0 +1,115 @@
+/* General UL Styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #282d32;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping in smaller screens */
+  justify-content: center; /* Centers items when flex-wrap occurs */
+}
+
+/* List Items */
+li {
+  float: left;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  display: none; /* Hidden by default */
+}
+
+/* Links Styling */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* Active Link */
+.active {
+  background-color: #04aa6d;
+}
+
+/* Toggle Button (Visible on Small Screens) */
+.toggle-button {
+  display: none;
+  background-color: #282d32;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%; /* Makes it span the navbar width */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Show Toggle Button */
+  .toggle-button {
+    display: block;
+    background-color: black;
+    color: white;
+  }
+
+  /* Hide the Navigation Links */
+  ul {
+    display: none;
+    flex-direction: column; /* Stack items vertically */
+    width: 30%; /* Full width */
+    background-color: #282d32;
+    border-radius: 10px;
+  }
+
+  /* Show Links When Active */
+  ul.active {
+    display: flex;
+    background-color: black;
+  }
+
+  /* List Items in Mobile */
+  li {
+    float: none;
+    width: 100%; /* Links take full width in mobile */
+  }
+
+  li a {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  /* Show Logo in Small Screens Only */
+  /* .logo {
+    display: block; Visible in small screens
+    text-align: center;
+    margin: 10px auto; Center the logo
+    background-color: black;
+    color: white;
+  } */
+  .navbar {
+    nav {
+      position: fixed; /* Keeps the navigation fixed at the top */
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #282d32;
+      z-index: 1000; /* Ensures it stays above other content */
+      padding: 10px 0; /* Adjust the padding as needed */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

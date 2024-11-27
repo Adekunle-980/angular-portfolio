@@ -1,0 +1,35 @@
+.img {
+    height: 200px;
+}
+
+.project {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+button {
+    width: 20%;
+    padding: 10px;
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  @media (max-width: 768px) {
+    button {
+        width: 50%;
+        padding: 10px;
+        background-color: #04aa6d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  }

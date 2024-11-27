@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" />
+    <div If="form.get('name')?.invalid && form.get('name')?.touched">
+    </div>
+  
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" />
+    <div If="form.get('email')?.invalid && form.get('email')?.touched">
+    </div>
+  
+    <label for="message">Message:</label>
+    <textarea id="message" formControlName="message"></textarea>
+  
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+  </form>
+  

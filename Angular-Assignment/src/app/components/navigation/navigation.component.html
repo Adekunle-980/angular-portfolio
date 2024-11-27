@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">X</a>
+        <button class="toggle-botton" (click)="toggleNav()">☰</button>
+    <ul id="nav-links" [class.active]="isNavOpen">
+        <li>
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Home</a>
+        </li>
+        <li>
+            <a routerLink="about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">About</a>
+        </li>
+        <li>
+            <a routerLink="portfolio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Portfolio</a>
+        </li>
+        <li>
+            <a routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Contacts</a>
+        </li>
+        <li>
+            <a routerLink="users" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Users</a>
+        </li>
+        <!-- <li>
+            <a routerLink="register" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Register</a>
+        </li> -->
+    </ul>
+</div>
+</nav>

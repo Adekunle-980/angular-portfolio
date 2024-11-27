@@ -1,0 +1,23 @@
+<h1>List of GitHub Users</h1>
+
+@for (u of users; track u.id){
+<!-- <div>
+        <p>id: {{u.id}}</p>
+        <p>name: {{u.name}}</p>
+        <p>Username: {{u.username}}</p>
+        <p>Email: {{u.email}}</p>
+        <hr />
+    </div> -->
+<div class="list">
+  <p>Username: {{ u.login }}</p>
+  <!-- <p>ID: {{ u.id }}</p> -->
+  <p>
+    <img src="{{ u.avatar_url }}" alt="{{ u.login }}" />
+  </p>
+  <button>
+    <a href="{{ u.html_url }}" target="_blank" style="text-decoration: none; color: black;">GitHub Profile</a>
+  </button>
+  <!-- <p>Link: {{ u.html_url }}</p> -->
+  <hr />
+</div>
+}

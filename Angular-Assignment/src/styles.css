@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+router-outlet + * {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 70%;
+  align-items: center;
+  /* background-image: url("../public/asset/Images/white.jpg"); */
+  /* background-size: cover; Adjusts the image to cover the entire element */
+  /* background-repeat: no-repeat; Prevents tiling of the image */
+  /* background-position: center; Centers the image */
+}

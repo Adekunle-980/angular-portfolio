@@ -1,0 +1,110 @@
+body,
+h1,
+h2,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: black;
+}
+
+/* body {
+  margin: 50px 200px;
+  padding: 0;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  border: 2px solid sienna;
+  position: absolute;
+} */
+
+header {
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  justify-content: center; /* Aligns images horizontally */
+  align-items: center; /* Aligns images vertically */
+  flex-wrap: wrap; /* Allows images to wrap if necessary */
+  /* height: 100vh;          Optional: Set height for vertical centering */
+  gap: 20px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+#container h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 5px;
+}
+
+#contain h2 {
+  text-align: left;
+  border-bottom: 1px solid black;
+  margin: 5px;
+}
+
+p {
+  text-align: justify;
+  padding: 10px;
+}
+
+img {
+  width: 350px;
+  height: 500px;
+  margin: 10px;
+  position: relative;
+  border-radius: 10%;
+}
+main {
+  padding: 1rem;
+}
+#con3 ul {
+  padding: 0;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .image {
+    display: block;
+    justify-content: center; /* Aligns images horizontally */
+    align-items: center; /* Aligns images vertically */
+    /* flex-wrap: wrap;        Allows images to wrap if necessary */
+    /* height: 100vh;          Optional: Set height for vertical centering */
+    gap: 20px;
+  }
+  #container {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  img {
+    width: 130px;
+    height: 250px;
+    margin: 10px;
+    position: relative;
+    border-radius: 10%;
+    align-items: center;
+  }
+}
