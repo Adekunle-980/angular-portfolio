@@ -3,6 +3,8 @@ In this project, I showcase my skills in angular routing, html, css and typescri
 I used the service tool to consume "(https://api.github.com/users)" to show the username, image and link to their profile.
 I used some authentication for the form so that an alert is raised when 2 fields are not filled properly.
 
+# Linked to deployed version.
+https://angular-portfolio-3r9j.vercel.app/
 
 # Issues faced
 I tried to implement the node.js as server.ts so I can send an email when the contact form is submitted.

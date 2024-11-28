@@ -1,7 +1,14 @@
 <nav class="navbar">
     <div class="container">
-        <a href="#" class="logo">X</a>
-        <button class="toggle-botton" (click)="toggleNav()">☰</button>
+        <a href="#" class="logo"></a>
+        <!-- <button class="toggle-botton" (click)="toggleNav()">☰</button> -->
+        <button
+        class="toggle-button"
+        (click)="toggleNav()"
+        aria-label="Toggle Navigation Menu"
+      >
+        &#9776; <!-- Unicode for Hamburger Icon -->
+      </button>
     <ul id="nav-links" [class.active]="isNavOpen">
         <li>
             <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Home</a>
