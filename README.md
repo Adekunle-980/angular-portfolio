@@ -2,6 +2,7 @@
 In this project, I showcase my skills in angular routing, html, css and typescript.
 I used the service tool to consume "(https://api.github.com/users)" to show the username, image and link to their profile.
 I used some authentication for the form so that an alert is raised when 2 fields are not filled properly.
+Starting Sept 09, I have started adding more features to my portfolio.
 
 # Linked to deployed version.
 https://angular-portfolio-3r9j.vercel.app/
