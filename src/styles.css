@@ -14,3 +14,6 @@ router-outlet + * {
   /* background-repeat: no-repeat; Prevents tiling of the image */
   /* background-position: center; Centers the image */
 }
+/* Global styles for Angular project - Black & Green theme */
+
+/* Reset and base styles */

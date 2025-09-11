@@ -1,0 +1,13 @@
+<header>
+  <h1>Jobs I Recently Applied To</h1>
+</header>
+
+<h2>Applied Jobs</h2>
+<ul>
+  <li *ngFor="let job of jobs">
+    <a [href]="job.link" target="_blank">{{ job.jobTitle }} - {{ job.company }}</a>
+    <span> ({{ job.dateApplied | date:'mediumDate' }})</span>
+  </li>
+</ul>
+
+<button (click)="addJob()">Add Job</button>
