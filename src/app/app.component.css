@@ -1,4 +1,21 @@
 .page {
-    height: 80px;
-    border: 1px solid;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  min-height: 100vh;        /* full viewport height */
+  display: flex;
+  flex-direction: column;   /* stack nav, main, footer */
+}
+
+main {
+  flex: 1;                  /* take up all available space */
+  display: flex;
+  flex-direction: column;
 }

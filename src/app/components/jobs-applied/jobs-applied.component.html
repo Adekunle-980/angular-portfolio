@@ -11,7 +11,7 @@
 </ul>
 
 <h2>Add New Job</h2>
-<form (ngSubmit)="submitJob()">
+<form id="form" (ngSubmit)="submitJob()">
   <div>
     <label>Job Title:</label>
     <input type="text" [(ngModel)]="newJob.jobTitle" name="jobTitle" required />
