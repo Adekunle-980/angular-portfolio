@@ -134,8 +134,8 @@ app.use(express.json());
 // MongoDB Atlas connection
 const uri = 'mongodb+srv://Jobs:Reigneth1125@cluster0.ak7ul8c.mongodb.net/';
 const client = new MongoClient(uri);
-const dbName = 'jobsDB';
-const collectionName = 'jobs';
+const dbName = 'jobTracker';
+const collectionName = 'appliedJobs';
 
 interface Job {
   _id?: ObjectId;

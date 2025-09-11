@@ -4,6 +4,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { UsersComponent } from './components/users/users.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from "./components/footer/footer.component";
+import { JobsAppliedComponent } from './components/jobs-applied/jobs-applied.component';
 
 
 @Component({

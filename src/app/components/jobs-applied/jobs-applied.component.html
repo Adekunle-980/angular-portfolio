@@ -10,4 +10,23 @@
   </li>
 </ul>
 
-<button (click)="addJob()">Add Job</button>
+<h2>Add New Job</h2>
+<form (ngSubmit)="submitJob()">
+  <div>
+    <label>Job Title:</label>
+    <input type="text" [(ngModel)]="newJob.jobTitle" name="jobTitle" required />
+  </div>
+  <div>
+    <label>Company:</label>
+    <input type="text" [(ngModel)]="newJob.company" name="company" required />
+  </div>
+  <div>
+    <label>Link:</label>
+    <input type="url" [(ngModel)]="newJob.link" name="link" required />
+  </div>
+  <div>
+    <label>Date Applied:</label>
+    <input type="date" [(ngModel)]="newJob.dateApplied" name="dateApplied" />
+  </div>
+  <button type="submit">Add Job</button>
+</form>
