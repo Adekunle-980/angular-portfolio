@@ -13,11 +13,10 @@ export class NavigationComponent {
 
   toggleNav(): void {
     this.isNavOpen = !this.isNavOpen;
-    const navLinks = document.getElementById('nav-links')
-    if (navLinks) {
-      navLinks.classList.toggle('active', this.isNavOpen);
+  }
 
-    }
+  closeNav(): void {
+    this.isNavOpen = false;
   }
 
 }

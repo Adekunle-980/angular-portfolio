@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { UsersComponent } from './components/users/users.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from "./components/footer/footer.component";
-import { JobsAppliedComponent } from './components/jobs-applied/jobs-applied.component';
 
 
 @Component({

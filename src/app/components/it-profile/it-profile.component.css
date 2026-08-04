@@ -1,0 +1,8 @@
+.button-row { margin-top: 30px; }
+.education-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: stretch; }
+.education-grid p { color: var(--muted); }
+.credential { display: flex; flex-direction: column; justify-content: center; min-height: 210px; padding: 30px; border-radius: 22px; background: var(--forest); color: white; }
+.credential span { color: #b9d5c3; font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; }
+.credential strong { margin: 14px 0 28px; font-family: 'Manrope', sans-serif; font-size: 1.8rem; }
+.credential a { font-weight: 800; }
+@media (max-width: 760px) { .education-grid { grid-template-columns: 1fr; } }

@@ -1,78 +1,12 @@
-/* Form Container */
-form {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Labels */
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Input and Textarea Styles */
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    box-sizing: border-box;
-  }
-
-  h1 {
-    text-align: center;
-  }
-  
-  /* Focus Effect */
-  input:focus, textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  /* Button Styles */
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #04aa6d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Button Hover Effect */
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Error Message */
-  div[If] {
-    color: red;
-    font-size: 0.875rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 480px) {
-    form {
-      padding: 15px;
-      font-size: 0.9rem;
-    }
-  
-    button {
-      font-size: 0.9rem;
-    }
-  }
-  
+.contact-page { min-height: 72vh; padding: 90px 0; background: var(--forest-dark); color: white; }
+.contact-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 100px; align-items: end; }
+.contact-page .eyebrow { color: #a8d3b6; }
+h1 { max-width: 800px; margin-bottom: 28px; font-size: clamp(3rem, 6vw, 6rem); line-height: .98; letter-spacing: -.065em; }
+.lede { max-width: 680px; color: #c7d7cd; font-size: 1.1rem; line-height: 1.75; }
+.email-link { display: inline-flex; align-items: center; gap: 18px; margin-top: 34px; padding-bottom: 7px; border-bottom: 1px solid #8fb49d; color: white; font-size: clamp(1.15rem, 2.5vw, 1.8rem); font-weight: 700; text-decoration: none; }
+aside { padding: 28px; border: 1px solid rgba(255,255,255,.18); border-radius: 22px; }
+aside a, aside div { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,.14); color: white; text-decoration: none; }
+aside a:last-child, aside div:last-child { border-bottom: 0; }
+aside span { color: #a8b9ae; }
+aside strong { text-align: right; }
+@media (max-width: 800px) { .contact-grid { grid-template-columns: 1fr; gap: 60px; } }

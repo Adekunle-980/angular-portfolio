@@ -1,36 +1,18 @@
-<nav class="navbar">
-    <div class="container">
-        <a href="#" class="logo"></a>
-        <!-- <button class="toggle-botton" (click)="toggleNav()">☰</button> -->
-        <button
-        class="toggle-button"
-        (click)="toggleNav()"
-        aria-label="Toggle Navigation Menu"
-      >
-        &#9776; <!-- Unicode for Hamburger Icon -->
-      </button>
-    <ul id="nav-links" [class.active]="isNavOpen">
-        <li>
-            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Home</a>
-        </li>
-        <li>
-            <a routerLink="about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">About</a>
-        </li>
-        <li>
-            <a routerLink="portfolio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Portfolio</a>
-        </li>
-        <li>
-            <a routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Contacts</a>
-        </li>
-        <li>
-            <a routerLink="jobs-applied" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Jobs Applied</a>
-        </li>
-        <!-- <li>
-            <a routerLink="users" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Users</a>
-        </li> -->
-        <!-- <li>
-            <a routerLink="register" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Register</a>
-        </li> -->
-    </ul>
-</div>
-</nav>
+<header class="site-header">
+  <div class="shell nav-shell">
+    <a routerLink="/" class="brand" aria-label="Adekunle Omonihi home">
+      <span class="brand-mark">AO</span>
+      <span>Adekunle Omonihi<small>Technology · Social Services</small></span>
+    </a>
+    <button class="toggle-button" (click)="toggleNav()" [attr.aria-expanded]="isNavOpen" aria-label="Toggle navigation">Menu</button>
+    <nav aria-label="Primary navigation">
+      <ul id="nav-links" [class.active]="isNavOpen">
+        <li><a routerLink="/it" routerLinkActive="active" (click)="closeNav()">IT profile</a></li>
+        <li><a routerLink="/social-service" routerLinkActive="active" (click)="closeNav()">Social Services</a></li>
+        <li><a routerLink="/work" routerLinkActive="active" (click)="closeNav()">Selected work</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="closeNav()">About</a></li>
+        <li><a class="contact-link" routerLink="/contact" routerLinkActive="active" (click)="closeNav()">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
