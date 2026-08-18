@@ -1,20 +1,150 @@
-/* You can add global styles to this file, and also import other style files */
-router-outlet + * {
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  height: 100%;
-  /* border: 1px solid;
-  border-radius: 10px; */
-  width: 70%;
-  align-items: center;
-  /* background-image: url("../public/asset/Images/white.jpg"); */
-  /* background-size: cover; Adjusts the image to cover the entire element */
-  /* background-repeat: no-repeat; Prevents tiling of the image */
-  /* background-position: center; Centers the image */
-}
-/* Global styles for Angular project - Black & Green theme */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
 
-/* Reset and base styles */
+:root {
+  --ink: #17211b;
+  --muted: #5e6b62;
+  --paper: #f7f8f3;
+  --surface: #ffffff;
+  --forest: #164b35;
+  --forest-dark: #0d3525;
+  --mint: #dcecdf;
+  --gold: #c98c3a;
+  --line: #dfe5dc;
+  --shadow: 0 24px 60px rgba(23, 33, 27, 0.1);
+  --radius: 24px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: 'DM Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: 'Manrope', Arial, sans-serif; }
+a { color: inherit; }
+button, input, textarea { font: inherit; }
+
+.shell {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  color: var(--forest);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+
+.section-heading h2 {
+  margin-bottom: 12px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.button-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 1px solid var(--forest);
+  border-radius: 999px;
+  background: var(--forest);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.button:hover { transform: translateY(-2px); background: var(--forest-dark); }
+.button.secondary { background: transparent; color: var(--forest); }
+.button.secondary:hover { background: var(--mint); }
+
+.profile-page { padding: 64px 0 96px; }
+
+.profile-hero {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 64px;
+  align-items: end;
+  padding-bottom: 54px;
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-hero h1 {
+  margin-bottom: 20px;
+  font-size: clamp(2.8rem, 7vw, 5.6rem);
+  line-height: .98;
+  letter-spacing: -0.065em;
+}
+
+.profile-hero .lede {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.65;
+}
+
+.profile-note {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+.profile-note strong { display: block; margin-bottom: 8px; }
+.profile-note p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+.content-section { padding-top: 64px; }
+.content-section h2 { margin-bottom: 28px; font-size: clamp(1.8rem, 3vw, 2.6rem); }
+
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+.info-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+.info-card .number { color: var(--gold); font-weight: 800; }
+.info-card h3 { margin: 18px 0 10px; font-size: 1.15rem; }
+.info-card p { margin: 0; color: var(--muted); line-height: 1.65; }
+
+.pill-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.pill { padding: 10px 14px; border-radius: 999px; background: var(--mint); color: var(--forest-dark); font-weight: 700; }
+
+@media (max-width: 820px) {
+  .profile-hero, .card-grid { grid-template-columns: 1fr; }
+  .profile-hero { gap: 28px; }
+}
+
+@media (max-width: 560px) {
+  .shell { width: min(100% - 28px, 1180px); }
+  .profile-page { padding-top: 42px; }
+  .button { width: 100%; }
+}

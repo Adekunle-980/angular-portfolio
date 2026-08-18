@@ -2,12 +2,10 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-writing',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './writing.component.html',
+  styleUrl: './writing.component.css'
 })
-export class HomeComponent {
-
-}
+export class WritingComponent {}

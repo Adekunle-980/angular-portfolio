@@ -1,21 +1,40 @@
-<header>
-    <h1>Contact Me</h1>
-  </header>
+<main class="contact-page">
+  <div class="shell contact-grid">
+    <section>
+      <p class="eyebrow">Let’s connect</p>
+      <h1>Send me a message.</h1>
+      <p class="lede">For social-services opportunities, community work, writing, collaboration, or IT support, complete the form and your message will come directly to me.</p>
 
-  <main>
-    <section class="contact-section">
-      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="98a6fb52-6272-4535-ba6d-4e19b7448435">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="hidden" name="subject" value="New portfolio message">
+        <input type="hidden" name="from_name" value="Adekunle Omonihi Portfolio">
+        <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+        </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Send message <span aria-hidden="true">→</span></button>
       </form>
     </section>
-  </main>
+    <aside>
+      <p class="eyebrow">Find me online</p>
+      <a href="https://www.linkedin.com/in/omoade980" target="_blank" rel="noopener"><span>LinkedIn</span><strong>Professional experience ↗</strong></a>
+      <a href="https://github.com/adekunle-980" target="_blank" rel="noopener"><span>GitHub</span><strong>Projects and code ↗</strong></a>
+      <div><span>Location</span><strong>Toronto, Ontario, Canada</strong></div>
+    </aside>
+  </div>
+</main>

@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { UsersComponent } from './components/users/users.component';
-import { RegisterComponent } from './components/register/register.component';
 import { AboutComponent } from './components/about/about.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { JobsAppliedComponent } from './components/jobs-applied/jobs-applied.component';
+import { ItProfileComponent } from './components/it-profile/it-profile.component';
+import { PeerSupportComponent } from './components/peer-support/peer-support.component';
+import { WritingComponent } from './components/writing/writing.component';
+import { FireOnTheMountainComponent } from './components/fire-on-the-mountain/fire-on-the-mountain.component';
 
 export const routes: Routes = [
     {
@@ -15,18 +15,33 @@ export const routes: Routes = [
         path: 'about', component: AboutComponent
     },
     {
-        path: 'portfolio', component: PortfolioComponent
+        path: 'portfolio', redirectTo: 'it', pathMatch: 'full'
     },
     {
         path: 'contact', component: ContactComponent
     },
     {
-        path: 'jobs-applied', component: JobsAppliedComponent
+        path: 'it', component: ItProfileComponent
+    },
+    {
+        path: 'social-service', component: PeerSupportComponent
+    },
+    {
+        path: 'social-services', redirectTo: 'social-service', pathMatch: 'full'
+    },
+    {
+        path: 'peer-support', redirectTo: 'social-service', pathMatch: 'full'
+    },
+    {
+        path: 'work', redirectTo: 'it', pathMatch: 'full'
+    },
+    {
+        path: 'writing', component: WritingComponent
+    },
+    {
+        path: 'writing/fire-on-the-mountain', component: FireOnTheMountainComponent
+    },
+    {
+        path: '**', redirectTo: ''
     }
-    // {
-    //     path: 'users', component: UsersComponent
-    // }
-    // {
-    //     path: 'register', component: RegisterComponent
-    // }
 ];
