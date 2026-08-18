@@ -1,8 +1,9 @@
 .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(223,229,220,.85); background: rgba(247,248,243,.92); backdrop-filter: blur(16px); }
-.nav-shell { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav-shell { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: flex; align-items: center; gap: 12px; font-family: 'Manrope', sans-serif; font-weight: 800; text-decoration: none; }
-.brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: var(--forest); color: white; font-size: .78rem; letter-spacing: .04em; }
-.brand small { display: block; margin-top: 2px; color: var(--muted); font-family: 'DM Sans', sans-serif; font-size: .68rem; font-weight: 600; letter-spacing: .03em; }
+.brand-mark { width: 48px; height: 48px; display: grid; flex: 0 0 48px; place-items: center; border-radius: 50%; background: var(--forest); color: white; font-size: .82rem; letter-spacing: .04em; }
+.brand > span:last-child { font-size: 1.08rem; line-height: 1.15; letter-spacing: -.015em; }
+.brand small { display: block; margin-top: 4px; color: var(--muted); font-family: 'DM Sans', sans-serif; font-size: .72rem; font-weight: 600; letter-spacing: .03em; }
 ul { display: flex; align-items: center; gap: 3px; margin: 0; padding: 0; list-style: none; }
 li a { display: block; padding: 10px 12px; border-radius: 999px; color: var(--muted); font-size: .9rem; font-weight: 700; text-decoration: none; }
 li a:hover, li a.active { color: var(--forest); background: var(--mint); }
@@ -10,7 +11,7 @@ li a.contact-link { margin-left: 6px; padding-inline: 18px; background: var(--fo
 .toggle-button { display: none; border: 0; background: transparent; color: var(--forest); font-weight: 800; }
 @media (max-width: 860px) {
   .toggle-button { display: block; }
-  nav { position: absolute; top: 78px; left: 0; right: 0; }
+  nav { position: absolute; top: 84px; left: 0; right: 0; }
   ul { display: none; padding: 18px 20px 24px; flex-direction: column; align-items: stretch; background: var(--paper); border-bottom: 1px solid var(--line); }
   ul.active { display: flex; }
   li a { padding: 13px 16px; }

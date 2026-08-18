@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ItProfileComponent } from './components/it-profile/it-profile.component';
 import { PeerSupportComponent } from './components/peer-support/peer-support.component';
@@ -16,7 +15,7 @@ export const routes: Routes = [
         path: 'about', component: AboutComponent
     },
     {
-        path: 'portfolio', redirectTo: 'work', pathMatch: 'full'
+        path: 'portfolio', redirectTo: 'it', pathMatch: 'full'
     },
     {
         path: 'contact', component: ContactComponent
@@ -34,7 +33,7 @@ export const routes: Routes = [
         path: 'peer-support', redirectTo: 'social-service', pathMatch: 'full'
     },
     {
-        path: 'work', component: PortfolioComponent
+        path: 'work', redirectTo: 'it', pathMatch: 'full'
     },
     {
         path: 'writing', component: WritingComponent

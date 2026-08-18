@@ -2,16 +2,16 @@
   <div class="shell nav-shell">
     <a routerLink="/" class="brand" aria-label="Adekunle Omonihi home">
       <span class="brand-mark">AO</span>
-      <span>Adekunle Omonihi<small>Technology · Social Services</small></span>
+      <span>Adekunle Omonihi<small>Social Services · Technology</small></span>
     </a>
     <button class="toggle-button" (click)="toggleNav()" [attr.aria-expanded]="isNavOpen" aria-label="Toggle navigation">Menu</button>
     <nav aria-label="Primary navigation">
       <ul id="nav-links" [class.active]="isNavOpen">
-        <li><a routerLink="/it" routerLinkActive="active" (click)="closeNav()">IT profile</a></li>
         <li><a routerLink="/social-service" routerLinkActive="active" (click)="closeNav()">Social Services</a></li>
-        <li><a routerLink="/work" routerLinkActive="active" (click)="closeNav()">Selected work</a></li>
+        <li><a routerLink="/it" routerLinkActive="active" (click)="closeNav()">IT profile</a></li>
         <li><a routerLink="/writing" routerLinkActive="active" (click)="closeNav()">Writing</a></li>
         <li><a routerLink="/about" routerLinkActive="active" (click)="closeNav()">About</a></li>
+        <li><a class="contact-link" href="mailto:omoade980@outlook.com" (click)="closeNav()">Let’s connect</a></li>
       </ul>
     </nav>
   </div>

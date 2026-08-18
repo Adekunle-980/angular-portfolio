@@ -16,8 +16,8 @@
 .path-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .path-card { min-height: 390px; display: flex; flex-direction: column; padding: 38px; border-radius: var(--radius); text-decoration: none; transition: transform .25s ease; }
 .path-card:hover { transform: translateY(-6px); }
-.path-card.tech { background: var(--forest); color: white; }
-.path-card.care { background: #efe3d0; color: #3e2b1f; }
+.path-card.care { background: var(--forest); color: white; }
+.path-card.tech { background: var(--mint); color: var(--forest-dark); }
 .path-label { font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; opacity: .76; }
 .path-card h3 { max-width: 430px; margin: auto 0 18px; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; letter-spacing: -.04em; }
 .path-card p { max-width: 500px; margin-bottom: 28px; line-height: 1.7; opacity: .84; }
