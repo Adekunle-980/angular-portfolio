@@ -1,12 +1,23 @@
 .contact-page { min-height: 72vh; padding: 90px 0; background: var(--forest-dark); color: white; }
-.contact-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 100px; align-items: end; }
+.contact-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 72px; align-items: start; }
 .contact-page .eyebrow { color: #a8d3b6; }
-h1 { max-width: 800px; margin-bottom: 28px; font-size: clamp(3rem, 6vw, 6rem); line-height: .98; letter-spacing: -.065em; }
+h1 { max-width: 800px; margin-bottom: 22px; font-size: clamp(2.8rem, 5vw, 5rem); line-height: 1; letter-spacing: -.06em; }
 .lede { max-width: 680px; color: #c7d7cd; font-size: 1.1rem; line-height: 1.75; }
-.email-link { display: inline-flex; align-items: center; gap: 18px; margin-top: 34px; padding-bottom: 7px; border-bottom: 1px solid #8fb49d; color: white; font-size: clamp(1.15rem, 2.5vw, 1.8rem); font-weight: 700; text-decoration: none; }
+form { margin-top: 38px; }
+.form-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.field { margin-bottom: 18px; }
+label { display: block; margin-bottom: 8px; color: #dce8e0; font-size: .84rem; font-weight: 700; }
+input, textarea { width: 100%; border: 1px solid rgba(255,255,255,.24); border-radius: 12px; background: rgba(255,255,255,.08); color: white; outline: none; }
+input { min-height: 50px; padding: 0 14px; }
+textarea { min-height: 160px; padding: 14px; resize: vertical; }
+input:focus, textarea:focus { border-color: #a8d3b6; box-shadow: 0 0 0 3px rgba(168,211,182,.14); }
+.botcheck { position: absolute; left: -9999px; width: 1px; height: 1px; }
+button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 22px; border: 0; border-radius: 999px; background: white; color: var(--forest-dark); font-weight: 800; cursor: pointer; transition: transform .2s ease, background .2s ease; }
+button:hover { transform: translateY(-2px); background: var(--mint); }
 aside { padding: 28px; border: 1px solid rgba(255,255,255,.18); border-radius: 22px; }
 aside a, aside div { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,.14); color: white; text-decoration: none; }
 aside a:last-child, aside div:last-child { border-bottom: 0; }
 aside span { color: #a8b9ae; }
 aside strong { text-align: right; }
 @media (max-width: 800px) { .contact-grid { grid-template-columns: 1fr; gap: 60px; } }
+@media (max-width: 560px) { .form-row { grid-template-columns: 1fr; gap: 0; } button { width: 100%; } }

@@ -13,6 +13,9 @@
 .availability { position: absolute; right: -20px; bottom: 28px; display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-radius: 999px; background: white; box-shadow: var(--shadow); font-weight: 700; font-size: .85rem; }
 .availability span { width: 10px; height: 10px; border-radius: 50%; background: #2ea66a; box-shadow: 0 0 0 5px #dff4e8; }
 .pathways { padding: 96px 0; background: white; }
+.pathways .section-heading { max-width: 820px; }
+.pathways .section-heading h2 { max-width: 760px; font-size: clamp(1.9rem, 3vw, 2.65rem); line-height: 1.15; letter-spacing: -.035em; }
+.pathways .section-heading > p:last-child { max-width: 720px; }
 .path-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .path-card { min-height: 390px; display: flex; flex-direction: column; padding: 38px; border-radius: var(--radius); text-decoration: none; transition: transform .25s ease; }
 .path-card:hover { transform: translateY(-6px); }

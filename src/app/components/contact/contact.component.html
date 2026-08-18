@@ -1,10 +1,34 @@
 <main class="contact-page">
   <div class="shell contact-grid">
     <section>
-      <p class="eyebrow">Contact</p>
-      <h1>Let’s discuss the work and where I can contribute.</h1>
-      <p class="lede">For IT support, social services, community work, writing, or collaboration opportunities, email is the best place to start.</p>
-      <a class="email-link" href="mailto:omoade980@outlook.com">omoade980&#64;outlook.com <span>↗</span></a>
+      <p class="eyebrow">Let’s connect</p>
+      <h1>Send me a message.</h1>
+      <p class="lede">For social-services opportunities, community work, writing, collaboration, or IT support, complete the form and your message will come directly to me.</p>
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="98a6fb52-6272-4535-ba6d-4e19b7448435">
+        <input type="hidden" name="subject" value="New portfolio message">
+        <input type="hidden" name="from_name" value="Adekunle Omonihi Portfolio">
+        <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Send message <span aria-hidden="true">→</span></button>
+      </form>
     </section>
     <aside>
       <p class="eyebrow">Find me online</p>
