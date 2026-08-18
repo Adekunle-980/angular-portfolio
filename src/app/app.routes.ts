@@ -5,6 +5,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ItProfileComponent } from './components/it-profile/it-profile.component';
 import { PeerSupportComponent } from './components/peer-support/peer-support.component';
+import { WritingComponent } from './components/writing/writing.component';
+import { FireOnTheMountainComponent } from './components/fire-on-the-mountain/fire-on-the-mountain.component';
 
 export const routes: Routes = [
     {
@@ -35,7 +37,10 @@ export const routes: Routes = [
         path: 'work', component: PortfolioComponent
     },
     {
-        path: 'writing', redirectTo: 'social-service', pathMatch: 'full'
+        path: 'writing', component: WritingComponent
+    },
+    {
+        path: 'writing/fire-on-the-mountain', component: FireOnTheMountainComponent
     },
     {
         path: '**', redirectTo: ''
